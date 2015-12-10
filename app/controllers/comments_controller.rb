@@ -21,7 +21,7 @@ class CommentsController < ApplicationController
   end
 
   def create
-    @comment = @product.comments.new(params[:comment])
+    @comment =Comments.new(params[:comment])
     @comment.save
     redirect_to @comment.product
   end
