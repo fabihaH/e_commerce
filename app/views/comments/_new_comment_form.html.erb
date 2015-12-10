@@ -1,0 +1,11 @@
+<%= form_for [@profile, @comment] do |form| %>
+  
+  <div class="fields">
+    <%= form.label :comment %>
+    <%= form.text_field :comment %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
